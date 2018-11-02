@@ -1,5 +1,5 @@
 name: Metrans
 latitude: !secret work_latitude
 longitude: !secret work_longtitude
-radius: 200
+radius: 180
 icon: mdi:worker
