@@ -57,6 +57,12 @@ sun:
 sensor:
   # Weather prediction
   - platform: yr
+  - platform: radarr
+    api_key: !secret radarr_api
+    host: !secret radarr_host
+    port: 23727
+    monitored_conditions:
+      - upcoming
 
 # Text to speech
 tts:
