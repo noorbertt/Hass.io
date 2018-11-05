@@ -1,3 +1,39 @@
+# Extension ignores
+*.log
+*.db
+*.pyc
+
+# Directory (contents) ignores
+config/.cloud
+config/.storage
+config/deps
+
+# Specific file ignores
+config/.config_entries.json
+config/.homekit.state
+config/.ios.conf
+config/.spotify-token-cache
+config/.tradfri_psk.conf
+config/.uuid
+config/aircast.xml
+config/core
+config/known_devices.yaml
+config/ip_bans.yaml
+config/options.xml
+config/OZW_Log.txt
+config/pyozw.sqlite
+config/secrets.yaml
+config/zwcfg_*
+config/zwscene.xml
+
+# Some other generic stuff
+.vscode
+.theia
+
+# Specific keeps
+!.gitkeep
+
+@ -1,23 +1,34 @@
 *.pid
 *.xml
 *.csr
@@ -20,4 +56,3 @@ ip_bans.yaml
 .*
 !/.gitignore
 config
-~syncthing
