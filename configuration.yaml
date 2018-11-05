@@ -79,8 +79,8 @@ script: !include scripts.yaml
 ###Rendezni###
 zone: !include_dir_list zones/
 
-###device_tracker: Nem mukodik###
-###  - platform: google_maps
-###    username: !secret google_tracker_username
-###    password: !secret google_tracker_password
-###    max_gps_accuracy: 200
+device_tracker:
+  - platform: google_maps
+    username: !secret google_tracker_username
+    password: !secret google_tracker_password
+    max_gps_accuracy: 200
