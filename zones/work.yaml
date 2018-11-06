@@ -1,4 +1,4 @@
-name: Metrans
+name: !secret work_norbi_name
 latitude: !secret work_latitude
 longitude: !secret work_longtitude
 radius: 180
