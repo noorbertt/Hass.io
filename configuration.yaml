@@ -57,12 +57,7 @@ sun:
 sensor:
   # Weather prediction
   - platform: yr
-  - platform: radarr
-    api_key: !secret radarr_api
-    host: !secret radarr_host
-    port: 23727
-    monitored_conditions:
-      - upcoming
+
 
 # Text to speech
 tts:
@@ -83,4 +78,26 @@ device_tracker:
   - platform: google_maps
     username: !secret google_tracker_username
     password: !secret google_tracker_password
-    max_gps_accuracy: 200
+    max_gps_accuracy: 20
+    new_device_defaults:
+     track_new_devices: true
+     hide_if_away: false
+  
+  
+  
+  - platform: nmap_tracker
+    hosts: 192.168.1.0/24
+  
+  - platform: bluetooth_tracker
+  
+
+
+panel_iframe:
+   motioneye:
+    title: motionEye
+    icon: mdi:cctv
+    url: http://192.168.1.162:8765
+   ide:
+    title: IDE
+    icon: mdi:code-braces
+    url: http://192.168.1.162:8321  
